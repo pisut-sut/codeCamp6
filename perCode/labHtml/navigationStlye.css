@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background:whitesmoke;
+}
+
+nav{
+    position: relative;
+    margin:auto  ; 
+    width: 590px;    /* nav กว้าง */
+    height: 50px;     /* nav สูง */
+    background:rgb(209, 206, 206) ; /* สีพื้นใน Nav*/
+    border-radius: 10px; /* ปรับมุมมนเมนูสีเทา */
+    font-size: 0; /* ข้อความหาย จะไปใช้ nav a แสดงข้อความแทน */
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+}
+
+nav a {
+    font-size:15px;
+    text-transform: uppercase; /* ตัวอักษรใหญ่ทุกตัว */
+    color: royalblue ; /* สีตัวอักษร */
+    text-decoration: none; /* ไม่มีเส้นใต้*/
+    line-height: 50px;  /* จัดอักษรให้อยุ่ตรงกลาง*/ 
+    position: relative;
+    z-index: 1; /* กำหนดไว้ที่ Layer1*/
+    
+    display: inline-block; /* ตั้งแต่ส่วนนี้ทำงานร่วมกับ a:nth-child */
+    text-align: center; /* ตั้งแต่ส่วนนี้ทำงานร่วมกับ a:nth-child */
+    /*display: inline;*/
+}
+
+nav .animation { 
+    position: absolute;
+    height: 100%;
+    top:0;
+    z-index: 0; /* กำหนดไว้ที่ Layer0*/
+    background: skyblue;
+     /* width: 100px; ลบอกไปใช้ nav .start-home*/
+    border-radius: 8px; /* ปรับมุมมนเมนูสีฟ้า - ทำงานสัมพันณ์กับ Nav */
+    transition: all .5s ease 0s;
+}
+
+a:nth-child(1) { width: 100px;}
+nav .start-home,a:nth-child(1):hover~.animation {
+    width: 100px; /* a:nth-child(1) { width: 100px;} */
+    left: 0;
+}
+
+a:nth-child(2) { width: 110px;}
+nav .start-PRODUCT,a:nth-child(2):hover~.animation {
+    width: 110px;
+    left: 100px; /* width =100px */
+}
+
+a:nth-child(3) { width: 100px;}
+nav .start-SERVICE,a:nth-child(3):hover~.animation {
+    width: 100px;
+/* width1  + width2 = 100px + 110px = 210px*/
+    left: 210px; 
+}
+a:nth-child(4) { width: 160px;}
+nav .start-PORTFOLIO,a:nth-child(4):hover~.animation {
+    width: 160px;
+/* width1  + width2 + width3 = 100px + 110px + 100px= 310px*/
+    left: 310px; 
+}
+
+a:nth-child(5) { width: 120px;}
+nav .start-CONTACT,a:nth-child(5):hover~.animation {
+    width: 120px;
+/* width1 + w2 + w3 + w4= 100+110+100+160= 310px*/
+    left: 470px; 
+}

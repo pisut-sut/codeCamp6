@@ -1,0 +1,122 @@
+/*----eaderTop headTop ----- */
+.headTop{  /*ตัวคุมหลัก ใช้คุม item ทั้งหมด */
+    display: grid; /* ประกาศการใช้งาน Grid */
+    grid-template-columns: auto auto auto; /* ใช้ปรับจำนวนหลัก    */
+    grid-template-rows: 50px  ;   /* ใช้ปรับจำนวนแถว ความยาวความสูงของ row   */
+    font-size: 25px;
+    background-color: whitesmoke;
+    /*justify-content: center;*/ /* รองปรับตั้งดู*/ 
+    /*align-items: end; */ /* รองปรับนอนดู*/    
+    
+}
+.headTop > div{
+    background-color: hotpink; 
+}
+.item1 {
+    text-align:left;
+    padding: 5px 0 0 10px ;
+}
+.item2 {
+    text-align:center;
+    padding:5px ;
+}
+.item3 {
+    text-align:right;
+    padding:5px 10px 0 0 ;
+}
+
+/*----headerBar headBar ----- */
+.headBar{  /*ตัวคุมหลัก ใช้คุม item ทั้งหมด */
+    display: grid; /* ประกาศการใช้งาน Grid */
+    grid-template-columns: auto auto auto; /* ใช้ปรับจำนวนหลัก    */
+    grid-template-rows: 80px  ;   /* ใช้ปรับจำนวนแถว ความยาวความสูงของ row   */
+    font-size: 25px;
+    background-color: rgb(150, 150, 214);
+    justify-content: center; /* รองปรับตั้งดู*/ 
+    /*align-items: end; */ /* รองปรับนอนดู*/ 
+    
+} 
+.item4 {
+     padding:18px 0 0 0 ;
+}
+
+/*----menuTapBar  TapBar----- */
+.TapBar{  /*ตัวคุมหลัก ใช้คุม item ทั้งหมด */
+    display: grid; /* ประกาศการใช้งาน Grid */
+    grid-template-columns: repeat(16,1fr); /* ใช้ปรับจำนวนหลัก    */
+    grid-template-rows: 40px ;   /* ใช้ปรับจำนวนแถว ความยาวความสูงของ row   */
+    grid-gap: 8px; /* ช่องวางระหว่างหลัก    */
+    font-size: 25px;
+    /*  background-color: rgb(193, 193, 196);*/
+    /* justify-content: center; รองปรับตั้งดู*/ 
+    /*align-items: end; */ /* รองปรับนอนดู*/ 
+    /*padding-top: 5px ;*/
+    margin-top: 5px; /* ระยะห่างระหว่าง tap */
+    text-decoration:none;
+}
+.TapBar > div{
+    background-color: rgb(193, 193, 196);
+    border-radius: 5px;
+    text-align: center;    
+    text-decoration:none;
+}
+a{
+    text-decoration:none; /* tag ทั้งหมด ไม่มีขีดเส้นใต้*/
+}
+ /*---- textOverConten  OverContent----- */
+.OverContent{  /*ตัวคุมหลัก ใช้คุม item ทั้งหมด */
+    display: grid; /* ประกาศการใช้งาน Grid */
+    grid-template-columns: auto auto auto auto; /* ใช้ปรับจำนวนหลัก    */
+    grid-template-rows: 40px  ;   /* ใช้ปรับจำนวนแถว ความยาวความสูงของ row   */
+    font-size: 25px;
+    background-color: whitesmoke;
+    /*justify-content: center;*/ /* รองปรับตั้งดู*/ 
+    /*align-items: end; */ /* รองปรับนอนดู*/    
+    margin-top: 5px;
+}
+.OverContent > div{
+  
+}
+.item21 {
+    text-align:left;
+    padding: 5px 0 0 10px ;
+}
+.item22 {
+    text-align:left;
+    padding: 5px 0 0 10px ;
+}
+.item23 {
+    text-align:right;
+    padding:5px 10px 0 0 ;
+}
+.item24 {
+    text-align:right;
+    padding:5px 10px 0 0 ;
+}
+
+  /*topContent*/
+.toContent{  /*ตัวคุมหลัก ใช้คุม item ทั้งหมด */
+    display: grid; /* ประกาศการใช้งาน Grid */
+    grid-template-columns: auto auto auto auto auto auto; /* ใช้ปรับจำนวนหลัก    */
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr  ;   /* ใช้ปรับจำนวนแถว ความยาวความสูงของ row   */
+    font-size: 50px;
+    background-color: whitesmoke;
+    grid-gap: 10px;
+    /*justify-content: center;*/ /* รองปรับตั้งดู*/ 
+    /*align-items: end; */ /* รองปรับนอนดู*/    
+    margin-top: 5px;
+}
+.toContent > div{
+    background-color: bisque; 
+}
+
+.item25 {
+    grid-column: span 3; 
+    grid-row: 1 / span 6;
+}
+
+.item41 {
+    grid-column: span 3; 
+}
+    
+

@@ -1,0 +1,35 @@
+.pagination{
+    display: inline-block;
+}
+
+/* ปรับค่าห่างตัวอักษร ใส่ตาราง*/
+.pagination a {
+   float: left; 
+   padding:  8px 16px;
+   text-decoration: none;
+   border: 1px solid brown;
+}
+
+/* การทำงานอยู่ที่หน้าไหนให้ใส่สีม่วงที่ช่องนั้น */
+.pagination a.active {
+   background-color: blueviolet;  
+   border: 1px solid blueviolet;
+   color:white ;
+}
+
+/* เมื่อ mouse แตะโดนช่องตัวเลขอื่นๆที่ไม่ได้อยู่ในหน้านั้นจะเป็นสีเหลือง */
+.pagination a:hover:not(.active) {
+   background-color: yellow;
+}
+
+/* ปรับความมุมโค้งมนช่องแรก */
+.pagination a:first-child {
+    border-top-left-radius:5px ;
+    border-bottom-left-radius: 5px;
+ }
+
+ /* ปรับความมุมโค้งมนช่องสุดท้าย */
+.pagination a:last-child {
+    border-top-right-radius:5px ;
+    border-bottom-right-radius: 5px;
+ }

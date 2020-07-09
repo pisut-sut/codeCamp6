@@ -1,0 +1,43 @@
+.container {
+    width: 450px;
+    height: 500px;
+    background: gainsboro;
+    margin: 10% auto;
+    padding: 10px; /*  ใช้ปรับความห่างจากจอ */
+}
+
+.tooltip {
+    position: relative; 
+    z-index: 20;
+}
+
+/*  ทำให้ข้อความThis is the tooltips หายไป (Default) */
+.tooltip span {
+    display: none;
+}
+
+/* เมื่อเอา mouse เลื่อนผ่านจะมี ข้อความขึ้นมา */
+.tooltip:hover {
+    z-index: 21;
+}
+
+.tooltip:hover span {
+    display: block; 
+    /*  เพิ่มส่วนนี้จะมีสี-ข้อความพื้นหลัง */
+    width: 100px;  /* กำหนดขนดพื้นหลังข้อความที่แสดงขึ้นมา */    
+    text-align: center; /* ใช้ในกรณีมีหลายข้อความ ต้องการให้แยกเห็นชัดเจน ใช้ร่วมกับ a {}*/
+    padding: 5px;
+    color: rgb(226, 43, 43); /* สีอักษร*/
+    background: aqua;  /* พื้นหลัง */
+    font-size:11px;
+    text-decoration: none;
+    position: absolute;
+    border-radius: 6px;
+    /* .ใช้ในกรณีต้องการปรับความห่างจากข้อความ */
+    top:20px;
+    left:-10px;   
+}
+
+a{
+    margin-right: 10px;
+}
