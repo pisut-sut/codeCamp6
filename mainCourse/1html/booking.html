@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        td {
+          border: 1px solid black;
+          padding: 15 px;
+          
+        }
+        table {
+          border-spacing: 10px;
+        }
+        th{
+            text-align: left;
+            padding: 0px;
+            margin: 0px;  
+            font-size: 20px; 
+            font-weight: 100;
+        }   
+        .button {
+           background-color: orange;           
+           color: white;   
+           border: none;        
+           padding: 12px ;       
+        }        
+    </style>
+
+    <title> Booking </title>
+</head>
+<body>
+    
+    <table style="width:100%">
+
+        <tr>
+           <th colspan="2"><b> Firstname </b></th> 
+           <th colspan="2"><b>Lastname</b></th>           
+        </tr>
+        <tr>
+            <td colspan="2">BKK</td>
+            <td colspan="2">DMK</td>           
+        </tr>
+        <tr>
+            <th colspan="2"></th>
+            <th colspan="2"></th>           
+        </tr>
+
+        <tr>
+            <th colspan="2"><b> Departing</b></th>
+            <th colspan="2"><b>Returning</b></th>           
+        </tr>
+        <tr>
+            <td colspan="2">03/01/2016</td>
+            <td colspan="2">mm/dd/yy</td>           
+        </tr>
+
+        <tr>
+            <th colspan="2"></th>
+            <th colspan="2"></th>           
+        </tr>
+        
+
+        <tr>
+            <th><b> Adult </b></th>
+            <th><b> Child </b></th>   
+            <th><b> Infant </b></th>
+            <th><b style="color: orange;">Currency </b></th>            
+        </tr>
+
+        <tr>
+            <th>
+                <select >
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="2">3</option>
+                  <option value="4">4</option>
+                </select>
+            </th>
+            <th>
+                <select >
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="2">3</option>
+                  <option value="4">4</option>
+                </select>
+            </th>
+            <th>
+                <select >
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="2">3</option>
+                  <option value="4">4</option>
+                </select>
+            </th>
+            <th>
+                <select >
+                  <option value="THA">THA</option>
+                  <option value="USD">USD</option>
+                  <option value="KER">KER</option>
+                  <option value="EUR">EUR</option>
+                </select> 
+            </th>                      
+            
+      </table>    
+      <button class="button">SEARCH</button>   
+</body>
+</html>

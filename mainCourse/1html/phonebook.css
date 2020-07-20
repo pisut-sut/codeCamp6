@@ -1,0 +1,39 @@
+ /* เริ่มต้นด้วขนาดหน้าจอ mobile  iad PC */
+div{
+    width: 300px;
+    height: 320px;
+    background-color:gainsboro;
+  }
+   /* ถ้าขนาดจอ 768 ให้แสดงขนาดตามด้านล่าง เช่น ipad*/
+  @media screen and (min-width: 768px) {
+    div{
+      width: 500px;
+      height: 768px;
+      background-color:ghostwhite;
+      margin: auto;
+    }
+  }
+  /* ถ้าขนาดจอ 1024 ให้แสดงขนาดตามด้านล่าง เช่น จแ pc*/
+  @media screen and (min-width: 1024px) {
+    div{
+      width: 900px;
+      height: 768px;
+      background-color:wheat;
+    }
+  }
+ 
+  table{
+      width: 100%;      
+  }
+
+  table, th, td {
+    border: 1px dashed black; /* เส้น : ขนาด 1 px , เส้นปะ, สีดำ */
+    border-collapse: collapse; /* เส้นเป็นช่อง */
+    text-align: left; /* อักษรชิดซ้า */
+    padding-left: 5px; /* อักษรห่างจากเส้นด้านซ้าย 5px */
+  }
+
+  body{
+      margin: 5px 5px 5px 5px;
+      background-color: hotpink;
+  }

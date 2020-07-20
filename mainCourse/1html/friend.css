@@ -1,0 +1,39 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: whitesmoke;    
+}
+
+.nav{
+    text-align:right;
+    padding: 10px 10px 10px 0;
+}
+
+a{
+    text-decoration:none ;
+    color:rgb(79, 81, 82);
+    font-size: 18px;  
+}
+a:hover {
+    text-decoration:underline ;
+    color:rgb(18, 18, 19);
+    font-size: 19px; 
+}
+
+
+img{
+    /* max-width: height:  คือ การทำให้เป็น web responsive;*/    
+    max-width: 100%;
+    height: auto;
+    opacity: 0.8 ;  /* ค่าใกล้ 0 ภาพจะไม่ชัด   */
+    /* background-color: rgb(59, 56, 56);  */
+}
+
+.tableDiv {
+    border: 2px solid rgb(168, 163, 163);
+    background-color: white;
+}
+.tableTab{
+    width: 100%;
+    padding: 5px;
+}
+th{border: 2px solid rgb(168, 163, 163);}
